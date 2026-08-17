@@ -57,9 +57,9 @@ export default async function OpengraphImage() {
           }}
         >
           <span>AGROSENSE</span>
-          <span style={{ color: "#7C5CFF" }}>◆</span>
+          <span style={{ color: "#7C5CFF" }}>//</span>
           <span>INFINETECK</span>
-          <span style={{ color: "#7C5CFF" }}>◆</span>
+          <span style={{ color: "#7C5CFF" }}>//</span>
           <span>VAQTRIX</span>
         </div>
       </div>
