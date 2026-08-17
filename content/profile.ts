@@ -70,5 +70,8 @@ export const profile = {
   },
 } as const;
 
+// Hosting providers can expose an environment variable as an empty string.
+// Treat that the same as an unset value so metadata generation never receives
+// an invalid URL during the build.
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  process.env.NEXT_PUBLIC_SITE_URL?.trim() || "http://localhost:3000";
